@@ -12,10 +12,7 @@ public class homework3 {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.out.println("Hi! Today I'll sort three numbers of your choice!");
-        System.out.print("Gimme your numbers separated by spaces or line breaks:");
-        System.out.println("Be warned - all NaN's will be thrown out and turned into nulls!");
-
+        introduce();
         Scanner userInput = new Scanner(System.in);
         String answer = userInput.nextLine();
         Float[] numbersArray = getNumbersArray(userInput, answer);
@@ -25,6 +22,12 @@ public class homework3 {
         think();
         Arrays.sort(numbersArray, Comparator.nullsLast(Comparator.naturalOrder()));
         System.out.println("Here's the sorted array: " + Arrays.toString(numbersArray) + " Ta-da!");
+    }
+
+    private static void introduce() {
+        System.out.println("Hi! Today I'll sort three numbers of your choice!");
+        System.out.println("Be warned - all NaN's will be thrown out and turned into nulls!");
+        System.out.print("Gimme your numbers separated by spaces or line breaks:");
     }
 
     private static Float[] getNumbersArray(Scanner userInput, String answer) {
