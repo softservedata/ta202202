@@ -1,10 +1,10 @@
-package com.softserve.edu;
+package com.softserve.edu.hw2;
 
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class App {
+public class homework2 {
 
     private static final String[] positiveAnswers = {"yes", "y", "ok"};
     private static final String[] negativeAnswers = {"no", "n"};
@@ -25,6 +25,7 @@ public class App {
             System.err.println("Sorry, I operate only in yes or no answers :(");
             answer = getAnswer();
         }
+        userInput.close();
         return answer;
     }
 
