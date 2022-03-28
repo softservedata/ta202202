@@ -1,4 +1,4 @@
-package com.softserve.edu;
+package com.softserve.edu.hw2;
 
 import java.util.Arrays;
 import java.util.Locale;
