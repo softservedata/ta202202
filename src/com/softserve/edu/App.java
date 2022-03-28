@@ -32,10 +32,8 @@ public class App {
         if(Arrays.asList(positiveAnswers).contains(answer.toLowerCase(Locale.ROOT))) {
             System.out.println("How nice of you! Here you go:");
         }
-        else {
-            if(Arrays.asList(negativeAnswers).contains(answer.toLowerCase(Locale.ROOT))) {
-                System.out.println("Too bad, I'm printing it anyway! >:3");
-            }
+        else if (Arrays.asList(negativeAnswers).contains(answer.toLowerCase(Locale.ROOT))) {
+            System.out.println("Too bad, I'm printing it anyway! >:3");
         }
     }
 }
