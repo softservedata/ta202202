@@ -1,7 +1,14 @@
 package com.softserve.edu01;
 
+/**
+ * Class <font color="RED"><b>App2</b></font>.
+ */
 public class App2 {
     private int i = 123; // = 0; by default
+
+    public App2() {
+        System.out.println("Constructor done");
+    }
 
 //    public App2(int k) {
 //        System.out.println("Constructor k = " + k);
@@ -22,7 +29,7 @@ public class App2 {
         app2.i = 321;
         System.out.println("app.i = " + app.i);    // 123
         System.out.println("app2.i = " + app2.i);  // 321
-        System.out.println("i = " + i);
+        System.out.println("i = " + i); // 456
         app.myPrint(); // 123
         app2.myPrint(); // 321
         //app2 = null;
@@ -30,6 +37,10 @@ public class App2 {
         i = 49;
         System.out.println("i = " + i); // 49
         System.out.println("(char) i = " + (char) i); // 1
+        //
+        String s = "abcd"; // new String("abcd");
+        //String s = new String("abcd");
+        System.out.println("s = " + s);
     }
 
 }
