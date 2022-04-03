@@ -2,40 +2,39 @@ package com.softserve.edu.hw3;
 
 import java.util.Scanner;
 
-public class Sorter {
+class Sorter {
+    private static final float[] raw = new float[3];
 
-    public float[] writeToArr() {
+    static {
         Scanner scan = new Scanner(System.in);
-        float[] raw = new float[3];
         for (int i = 0; i < raw.length; i++) {
-            System.out.println("Enter " + (i+1) + " number: ");
+            System.out.print("Enter " + (i + 1) + " number: ");
             raw[i] = scan.nextFloat();
         }
-        //scan.close();
-        return raw;
-    }
-
-    public float[] makeSort(float[] raw) {
-        for (int k = 1; k < raw.length; k++) {
-            for (int m = 0; m < raw.length-k; m++) {
-                if (raw[m] > raw[m+1]) {
-                    float help = raw[m];
-                    raw[m] = raw[m+1];
-                    raw[m+1] = help;
-                }
-            }
-        }
-        return raw;
-    }
-
-    public void print(float[] raw) {
-        System.out.println("The result is:");
-        for (float f : raw) {
-            System.out.print(f + " ");
-        }
+        scan.close();
+        makeSort();
         System.out.println();
     }
 
+    private static void makeSort() {
+        for (int k = 1; k < Sorter.raw.length; k++) {
+            for (int m = 0; m < Sorter.raw.length - k; m++) {
+                if (Sorter.raw[m] > Sorter.raw[m + 1]) {
+                    float help = Sorter.raw[m];
+                    Sorter.raw[m] = Sorter.raw[m + 1];
+                    Sorter.raw[m + 1] = help;
+                }
+            }
+        }
+    }
+
+    public void print() {
+        System.out.println("The result is:");
+        for (float f : raw) {
+            System.out.print(f + "\t\t");
+        }
+        System.out.println();
+    }
 }
 
 
