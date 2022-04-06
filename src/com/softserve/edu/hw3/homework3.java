@@ -81,7 +81,7 @@ public class homework3 {
         return numbers;
     }
 
-    private static void think() throws InterruptedException {
+    public static void think() throws InterruptedException {
         System.out.print("Thinking");
         Thread.sleep(500);
         System.out.print(".");

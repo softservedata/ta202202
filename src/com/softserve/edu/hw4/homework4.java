@@ -1,11 +1,12 @@
 package com.softserve.edu.hw4;
 
-
 import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Objects;
+
+import static com.softserve.edu.hw3.homework3.think;
 
 public class homework4 {
     private static final DecimalFormat decimalFormat = new DecimalFormat("0.00");
@@ -66,16 +67,5 @@ public class homework4 {
 
     private static String printInTwoColumns(String column1, String column2) {
         return String.format("%-30s %10s", column1, column2);
-    }
-
-    private static void think() throws InterruptedException {
-        System.out.print("Thinking");
-        Thread.sleep(500);
-        System.out.print(".");
-        Thread.sleep(500);
-        System.out.print(".");
-        Thread.sleep(500);
-        System.out.print("."+"\n");
-        Thread.sleep(500);
     }
 }
