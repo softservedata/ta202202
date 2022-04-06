@@ -6,7 +6,7 @@ public enum Drinks {
     WINE("Commonly used antidepressant."),
     TEST(); //showing off the non-parametrized constructor
 
-    public final String description;
+    private final String description;
 
     Drinks(String description) {
         this.description = description;
