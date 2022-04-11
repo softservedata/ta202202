@@ -7,7 +7,7 @@ enum Season {
 }
 */
 
-// /*-
+/*-
 enum Season {
     WINTER("Winter"),
     SPRING("Spring"),
@@ -38,9 +38,9 @@ enum Season {
         return Season.WINTER;
     }
 }
-// */
+*/
 
-/*-
+// /*-
 enum Season {
     WINTER("Winter") {
         public Season nextSeason() { return SPRING; }
@@ -68,18 +68,18 @@ enum Season {
     
     public abstract Season nextSeason();
 }
-*/
+// */
 
 public class AppEnum {
     
 	public static void main(String[] args) {
-		// /*-
+		/*-
 		Season season;
         season = Season.WINTER;
-        System.out.println("season.toString() = " + season);
+        System.out.println("season.toString() = " + season); // .toString();
         System.out.println("season.name() = " + season.name());
         //
-        // /*
+        //
         System.out.println("Next season = " + season.nextSeason().name());
 		//
         String name = "Spring"; // "Spring1" ERROR
@@ -91,12 +91,12 @@ public class AppEnum {
         for (Season current : Season.values()) {
             System.out.println("current = " + current); // current.toString()
         }
-        // */
-        /*
+        */
+        // /*
         Season season = null;
         String month = "Marth";
         switch (month) {
-        case "De�ember":
+        case "December":
         case "January":
         case "February":
             season = Season.WINTER;
@@ -126,7 +126,7 @@ public class AppEnum {
         //
         switch (season) {
         case WINTER:
-            System.out.println("De�ember, January, February");
+            System.out.println("December, January, February");
             break;
         case SPRING:
             System.out.println("Marth, April, May");
@@ -138,7 +138,7 @@ public class AppEnum {
             System.out.println("September, October, November");
             break;
         }
-        */
+        // */
 	}
 	
 }
