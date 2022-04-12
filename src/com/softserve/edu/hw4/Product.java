@@ -1,5 +1,4 @@
 package com.softserve.edu.hw4;
-
 import java.util.Arrays;
 
 public class Product  {
