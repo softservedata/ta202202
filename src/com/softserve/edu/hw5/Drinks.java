@@ -5,7 +5,7 @@ public enum Drinks {
     COFFEE("Coffee is good in the morning"),
     WINE("Wine is always good :)");
 
-    public String description;
+    private String description;
 
     private Drinks (String description) {
         this.description = description;
