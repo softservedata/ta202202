@@ -13,7 +13,7 @@ public class Homework8 {
 
         Arrays.sort(birdsList);
         for (int i = 0; i < birdsList.length; i++) {
-            System.out.println(birdsList[i].toString());
+            System.out.println(birdsList[i]);
         }
     }
 }
