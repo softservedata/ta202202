@@ -1,7 +1,5 @@
 package com.softserve.edu.hw6;
 
-import java.util.Objects;
-
 class Pub {
     public static void main(String[] args) {
         Pub easternPub = new Pub(Drinks.COFFEE, 30);
