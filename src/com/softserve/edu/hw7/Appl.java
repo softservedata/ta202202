@@ -16,12 +16,12 @@ public class Appl {
         for (i = 0; i < arr1.length; i++) {
             if (MaxPer < arr1[i].GetPerimeter()) {
                 MaxPer = arr1[i].GetPerimeter();
-                figure = String.valueOf(arr1[i].getClass());
+                figure = arr1[i].GetMyClass();
             }
             ;
         }
         ;
-        System.out.println("Max perimeter is " + MaxPer + " for figure " + figure);
+        System.out.println("Max perimeter is " + MaxPer + " for figure - " + figure);
 
     }
 }

@@ -1,6 +1,6 @@
 package com.softserve.edu.hw7;
 
-public class Triangle extends Figure{
+public class Triangle extends Figure {
 
     private double sidea = 0.0;
     private double sideb = 0.0;
@@ -41,4 +41,8 @@ public class Triangle extends Figure{
         return (sidea + sideb + sidec);
     }
 
+    @Override
+    public String GetMyClass() {
+        return "Triangle";
+    }
 }

@@ -31,4 +31,9 @@ public class Rectangle extends Figure {
     public double GetPerimeter() {
         return (2 * (width + length));
     }
+
+    @Override
+    public String GetMyClass() {
+        return "Rectangle";
+    }
 }
