@@ -3,7 +3,7 @@ package com.softserve.edu.hw7;
 class Triangle extends  Figure {
     private String figureName;
     private int sideOne, sideTwo, sideThree;
-    int trianglePerimeter;
+    private int trianglePerimeter;
 
     public Triangle (String figureName, int sideOne, int sideTwo, int sideThree) {
         this.figureName = figureName;

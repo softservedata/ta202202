@@ -3,7 +3,7 @@ package com.softserve.edu.hw7;
 class Rectangle extends  Figure {
     private String figureName;
     private int shortSide, longSide;
-    int rectanglePerimeter;
+    private int rectanglePerimeter;
 
     public Rectangle (String figureName, int shortSide, int longSide) {
         this.figureName = figureName;

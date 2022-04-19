@@ -3,7 +3,7 @@ package com.softserve.edu.hw7;
 class Square extends  Figure {
     private String figureName;
     private int squareSide;
-    int squarePerimeter;
+    private int squarePerimeter;
 
     public Square (String figureName, int squareSide) {
         this.figureName = figureName;
