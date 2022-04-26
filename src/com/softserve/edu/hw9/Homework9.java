@@ -18,11 +18,16 @@ public class Homework9 {
         arraylist2.add(6);
         arraylist2.add(7);
 
-        for (int i = 0; i < arraylist1.size(); i++) {
+        int iterationLength = Math.max(arraylist1.size(), arraylist2.size());
+        for (int i = 0; i < iterationLength; i++) {
             if (arraylist2.contains(arraylist1.get(i))) {
                 commonList.add(arraylist1.get(i));
                 System.out.println("Common element in arraylist1 and arraylist2: " + arraylist1.get(i));
             }
         }
+        System.out.println("List with common items: " + commonList);
     }
 }
+
+
+
