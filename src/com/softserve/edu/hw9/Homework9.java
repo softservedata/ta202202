@@ -16,7 +16,7 @@ public class Homework9 {
         arraylist2.add(3);
         arraylist2.add(1);
         arraylist2.add(6);
-        arraylist2.add(7);
+        arraylist2.add(9);
 
         for (int i = 0; i < arraylist1.size(); i++) {
             if (arraylist2.contains(arraylist1.get(i))) {
