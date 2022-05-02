@@ -48,7 +48,8 @@ class ListCreator {
     private void printList(List<Integer> list) {
         if (list.isEmpty()) {
             System.out.println("Given List is empty :(");
-        } else {
+        }
+        else {
             System.out.println();
             for (Integer i : list) {
                 System.out.print(i + " ");
