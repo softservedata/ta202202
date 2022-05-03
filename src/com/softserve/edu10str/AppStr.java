@@ -60,7 +60,7 @@ public class AppStr {
 		System.out.println("a.compareTo(A) = " + a.compareTo(A)); // 32
 		System.out.println("a.compareToIgnoreCase(A) = " + a.compareToIgnoreCase(A)); // 0
 		*/
-		// /*-
+		/*-
 		String a0 = "Java"; // equals new String("Java");
 		//String a0 = new String("Java");
 		String a1 = "Java"; // set reference
@@ -78,12 +78,13 @@ public class AppStr {
 		System.out.println("a0.hashCode() =  " + a0.hashCode());
 		System.out.println("a1.hashCode() =  " + a1.hashCode());
 		System.out.println("a2.hashCode() =  " + a2.hashCode());
-		// */
+		*/
 		/*-
-		String str = "JAVA-SE.8 Study";
+		String str = "JAVA-SE...8  Study";
 		System.out.println("String: " + str);
-		//String[] arr = str.split("-|.|,| ");
-		String[] arr = str.split("-| |\\.|,");
+		//String[] arr = str.split("-|.|,| "); // Error
+		//String[] arr = str.split("-| |\\.|,");
+		String[] arr = str.split("-+| +|\\.+|,+");
 		System.out.println("arr = " + Arrays.toString(arr));
 		for (String w : arr) {
 			System.out.println(w);
@@ -96,9 +97,9 @@ public class AppStr {
 		String s = String.format(formatStr, "pi", PI);
 		System.out.println(s);
 		System.out.printf(formatStr, "pi", PI);
-		System.out.printf("hashcode =%h", 64);
+		System.out.printf("hashcode =%h", 64); // 0x40 = 4*16^1+0*16^0 = 64
 		*/
-		/*-
+		// /*-
 		String s1 = new String("Hello");
 		String s2 = " And Goodbye";
 		String str = s1 + s2;
@@ -116,6 +117,6 @@ public class AppStr {
 		System.out.println("new sb.length() = " + sb.length());
 		System.out.println("new sb.capacity() = " + sb.capacity());
 		System.out.println("Reverse sb = " + sb.reverse());
-		*/
+		// */
 	}
 }
