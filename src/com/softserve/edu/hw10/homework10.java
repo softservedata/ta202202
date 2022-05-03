@@ -6,7 +6,7 @@ public class homework10 {
     public static void main(String[] args) {
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();
-        Set<Integer> list3 = new HashSet<>();
+
 
         int length = 10;
         Random num = new Random();
