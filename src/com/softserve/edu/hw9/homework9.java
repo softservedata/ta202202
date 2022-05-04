@@ -24,7 +24,7 @@ public class homework9 {
         ArrayList<Integer> list = new ArrayList<>();
         Random random = new Random();
         while (list.size() < size) {
-            list.add(random.nextInt(limit));
+            list.add(random.nextInt(limit+1));
         }
         return list;
     }
