@@ -20,7 +20,7 @@ public class homework9 {
         System.out.println("Just in case you meant showing only distinct elements: " + distinctCommonList);
     }
 
-    private static ArrayList<Integer> createRandomIntegerArrayList(Integer size, Integer limit) {
+    public static ArrayList<Integer> createRandomIntegerArrayList(Integer size, Integer limit) {
         ArrayList<Integer> list = new ArrayList<>();
         Random random = new Random();
         while (list.size() < size) {
