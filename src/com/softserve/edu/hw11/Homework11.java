@@ -9,7 +9,7 @@ public class Homework11 {
         System.out.println("Please enter new password. \nThe password should be at least" +
                 "12 characters long, containing uppercase and lowercase letters, numbers " +
                 "and the following special characters: \n " +
-                "!@#&()–\\[{}\\]:;',?\\/*~$^\\+=<>\\.\\\\ \n");
+                "!@#&()–[{}]:;',?/\\*~$^+=<>.\n");
 
         String text = sc.nextLine();
         String pattern = "([a-zA-Z0-9!@#&()–\\[{}\\]:;',?\\/*~$^\\+=<>\\.\\\\]){12,}";
