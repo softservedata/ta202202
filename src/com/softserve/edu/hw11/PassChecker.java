@@ -20,6 +20,7 @@ public class PassChecker {
     }
 
     private static void checkPass(){
+        Regexes[] arr = Regexes.values();
         int count = 0;
         Matcher mat;
         printMessage("Enter password your want to check\n" +
@@ -30,9 +31,9 @@ public class PassChecker {
                      "- at least one special character from next set:\n" +
                      "@, #, $, %, ^, &, +, =, -, ?, !, _\n");
 
-        while (count < 6){
+        while (count < arr.length){
             rewritePass();
-            for(Regexes item : Regexes.values()) {
+            for(Regexes item : arr) {
                 mat = item.getPat().matcher(password);
                 if (!mat.find()) {
                     printMessage(item.getMessage());
@@ -59,7 +60,7 @@ enum Regexes {
     private final String message;
     private final Pattern pat;
 
-    Regexes(String regex, String message ){
+    Regexes(String regex, String message){
         this.message = message;
         this.pat = Pattern.compile(regex);
     }
