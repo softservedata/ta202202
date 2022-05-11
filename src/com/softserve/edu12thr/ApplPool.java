@@ -26,6 +26,11 @@ public class ApplPool {
 			Runnable worker = new Worker(i);
 			executor.execute(worker);
 		}
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		executor.shutdown();
 		while (!executor.isTerminated()) {
 			System.out.print("*");

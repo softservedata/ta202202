@@ -15,7 +15,12 @@ public class Appl {
 		Thread t2 = new Thread(r2);
 		//t2.setPriority(Thread.MAX_PRIORITY);
 		t1.start();
+		//
+		//t1.join();
+		//
 		t2.start();
+		//
+		//t1.start(); // Error
 		//
 		t1.join();
 		t2.join();
