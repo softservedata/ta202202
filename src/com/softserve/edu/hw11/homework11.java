@@ -18,8 +18,8 @@ public class homework11 {
         Pattern pattern = Pattern.compile(regexMap.get("generalRegex"));
         Matcher matcher = pattern.matcher(password);
 
-        if(matcher.matches()) {
-            System.out.println("That's a strong password!");
+        if(matcher.matches()) { // this check is consciously left at the very beginning in order to skip the
+            System.out.println("That's a strong password!");    // unnecessary checks if the password is correct
         } else {
             if(didntMatch(password, regexMap.get("numberRegex"))) {
                 System.err.println("There has to be at least one number.");
