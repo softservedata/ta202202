@@ -1,0 +1,7 @@
+Welcome Welcome Welcome
+This algorithm only works on complete match
+Including matching case
+welcome wElCoMe Welcome
+However based on the formulation of the problem
+it doesn't look like an issue
+Welcome!
