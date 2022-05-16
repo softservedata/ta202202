@@ -2,17 +2,18 @@ package com.softserve.edu14lambda;
 
 import java.util.Scanner;
 
-//@FunctionalInterface
+@FunctionalInterface
 interface MyFunctional {
 	double f(double x);
 	//double g(double x);
+	//boolean equals(Object obj);
 }
 
 class MyF implements MyFunctional {
-	@Override
-	public double f(double x) {
-		return x * x;
-	}
+		@Override
+		public double f(double x) {
+			return x * x;
+		}
 }
 
 public class ApplName {
@@ -51,10 +52,10 @@ public class ApplName {
 		n = sc.nextInt();
 		//
 		// Before Java-8. Call Back
-		MyF myf = new MyF();
-		System.out.println("x2 Integral = " + app.integral(myf, a, b, n));
+//		MyF myf = new MyF();
+//		System.out.println("x2 Integral = " + app.integral(myf, a, b, n));
 		//
-		// Anonymous classes
+		// Anonymous classes from Java-7
 //		System.out.println("x2 Integral = " + app.integral(
 //				new MyFunctional() {
 //					@Override
@@ -72,10 +73,10 @@ public class ApplName {
 //		MyFunctional f1 = x->x*x;
 //		System.out.println("x2 Integral = " + app.integral(f1, a, b, n));
 		//
-//		System.out.println("x2 Integral =  " + app.integral(x -> x * x, a, b, n));
+		System.out.println("x2 Integral =  " + app.integral(x -> x * x, a, b, n));
 		//
-		//System.out.println("x2 Integral = " + app.integral(app::x2, a, b, n));
-		//System.out.println("mySin Integral = " + app.integral(app::mySin, a, b, n));
+//		System.out.println("x2 Integral = " + app.integral(app::x2, a, b, n));
+//		System.out.println("mySin Integral = " + app.integral(app::mySin, a, b, n));
 	}
 }
 

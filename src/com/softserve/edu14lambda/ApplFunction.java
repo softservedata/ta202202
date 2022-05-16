@@ -3,6 +3,10 @@ package com.softserve.edu14lambda;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 class Person {
 	private String name;
@@ -18,19 +22,21 @@ class Person {
 
 public class ApplFunction {
 	public static void main(String[] args) {
-		/*-
+		// /*-
 		Predicate<String> predicate1 = (s) -> s.length() > 1;
 		//List<String> names = Arrays.asList(new String[] {"Angela", "Aaron", "Bob", "Claire", "David"});
 		List<String> names = Arrays.asList("Angela", "Aaron", "Bob", "Claire", "David", "A");
 		Predicate<String> predicate = name -> name.startsWith("A");
 		System.out.println("Origin: " + names);
-		List<String> namesWithA = names.stream()
-				.filter(name -> name.startsWith("A"))
-				//.filter(predicate)
+		List<String> namesWithA =
+				names.stream()
+				//.filter(name -> name.startsWith("A"))
+				.filter(predicate)
 				.filter(predicate1)
+				//.forEach(System.out::println);
 				.collect(Collectors.toList());
-		System.out.println("Modify: " + namesWithA);
-		*/
+		//System.out.println("Modify: " + namesWithA);
+		// */
 		/*-
 		Function<String, Integer> stringToInt = x -> Integer.valueOf(x);
 		String s = "123";
@@ -60,7 +66,7 @@ public class ApplFunction {
 		names.replaceAll(name -> name.toUpperCase());
 		System.out.println("Updated List = " + names);
 		*/
-		// /*-
+		/*-
 		List<String> names = Arrays.asList("bob", "josh", "megan");
 		System.out.println("Original List = " + names);
 		Iterator<String> it = names.iterator();
@@ -70,6 +76,6 @@ public class ApplFunction {
 			current = current.toUpperCase();
 			System.out.println(current);
 		}
-		// */
+		*/
 	}
 }
