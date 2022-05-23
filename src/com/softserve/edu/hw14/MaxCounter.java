@@ -31,6 +31,6 @@ public class MaxCounter {
     private static void printCountOfMax(){
         System.out.printf("\n\nThe count of maximal numbers is: %d\n",
                 randomList.stream()
-                .filter(aLong -> aLong.equals(randomList.stream().max(Long::compareTo).get())).count());
+                .filter(aLong -> aLong.equals(randomList.stream().max(Long::compare).get())).count());
     }
 }
